@@ -1,0 +1,73 @@
+@import url(./base.css);
+@import url(./common.less);
+
+
+.fit{
+    object-fit: contain;
+}
+.scroll{
+    overflow: scroll;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+// 天地图
+@window-bg: rgba(183, 24, 20, 0.9);
+
+.tdt-infowindow-content-wrapper,
+.tdt-infowindow-tip {
+    background: @window-bg ;
+}
+
+.tdt-infowindow-content-wrapper {
+    border-radius: 10px;
+}
+
+.tdt-infowindow-content p {
+    margin: 10px 0;
+    color: #fff;
+}
+
+// 隐藏天地图logo
+.tdt-control-copyright.tdt-control {
+    div {
+        display: none;
+    }
+}
+
+.arco-image.arco-image-with-footer-inner{
+        .arco-image-img{
+            margin:  0 auto;
+        }
+        .arco-image-footer{
+            padding: 23px 16px;
+            .arco-image-footer-caption{
+                .arco-image-footer-caption-title{ 
+                }
+            }
+        }
+}
+
+// 清除windicss默认样式对arco的影响
+[type='text']:focus,
+[type='email']:focus,
+[type='url']:focus,
+[type='password']:focus,
+[type='number']:focus,
+[type='date']:focus,
+[type='datetime-local']:focus,
+[type='month']:focus,
+[type='search']:focus,
+[type='tel']:focus,
+[type='time']:focus,
+[type='week']:focus,
+[multiple]:focus,
+textarea:focus,
+select:focus {
+    box-shadow: none;
+    border-color: transparent;
+}
