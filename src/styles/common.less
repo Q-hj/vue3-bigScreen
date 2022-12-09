@@ -1,26 +1,9 @@
-.title {
-    position: relative;
-    color: #2d312b;
+ // 弥补windicss没有设置边框方向的类
+ @direction: left, right, top, bottom;
 
-    &::before {
-        content: '';
-        position: absolute;
-        z-index: -1;
-        left: 0;
-        bottom: 4px;
-        width: 2em;
-        height: 6px;
-        background: linear-gradient(to right, #ff0707, transparent);
-    }
-}
-
-
-// 弥补windicss没有设置边框方向的类
-@direction: left, right, top, bottom;
-
-each(@direction, {
-    .border-@{value} {
-        border-width: 0 !important;
-        border-@{value}-width: unset !important;
-    }
-});
+ each(@direction, {
+     .border-@{value} {
+         border-width: 0 !important;
+         border-@{value}-width: unset !important;
+     }
+ });

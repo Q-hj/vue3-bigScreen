@@ -1,12 +1,9 @@
 @import url(./base.css);
 @import url(./common.less);
 
-
-.fit{
-    object-fit: contain;
-}
-.scroll{
-    overflow: scroll;
+span,
+p {
+    color: #FFFFFF;
 }
 
 img {
@@ -39,17 +36,18 @@ img {
     }
 }
 
-.arco-image.arco-image-with-footer-inner{
-        .arco-image-img{
-            margin:  0 auto;
+.arco-image.arco-image-with-footer-inner {
+    .arco-image-img {
+        margin: 0 auto;
+    }
+
+    .arco-image-footer {
+        padding: 23px 16px;
+
+        .arco-image-footer-caption {
+            .arco-image-footer-caption-title {}
         }
-        .arco-image-footer{
-            padding: 23px 16px;
-            .arco-image-footer-caption{
-                .arco-image-footer-caption-title{ 
-                }
-            }
-        }
+    }
 }
 
 // 清除windicss默认样式对arco的影响
